@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>If-else advanced</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <p>
+            Statistički podaci: 
+            <span id="statistics"></span>
+        </p>
+        
+        <script type="text/javascript">
+
+            // Definisanim varijablama dodeliti vrednosti koje se odnose na vas.
+            // Krajnja poruka treba da izgleda: Milomir Dragović je osoba muškog pola i on je nadprosečno visoka osoba.
+            //
+            // U ispitivanju se u obzir uzimaju pol i visina.
+            // Uslovi za  visinu ako je pol muški:
+            // viši 1.9 "visok"; između 1.7 i 1.9 "prosečno visok"; niži od 1.7 "nizak"
+            //
+            // Uslovi za visinu ako je poz ženski:
+            // viša od 1.8 "visoka"; između 1.55 i 1.8 "prosečno visoka"; niža od 1.55 "niska"
+
+            
+            // Krajnju statistiku ispisati u elementu koji ima id statistics
+
+            var name = 'Milica';  //string
+            var surname = 'Stanisic'; //string
+            var gender = 'Z'; //string M ili Z
+            var height = 1.63; // number vidth decimals
+            var statistika = name + " " + surname; //prazan string
+            let biography = ''; 
+
+            // Primeri:
+            // P1: Nikola Tesla je osoba muškog pola i on je nadprosečno visoka osoba.
+            // P2: Nikola Tesla je osoba muškog pola i on je prosečno visoka osoba.
+            // P3: Mileva Ajnštajn je osoba ženskog pola i ona je prosečno visoka osoba.
+                
+            /************************************
+             VAŠ KOD IDE ISPOD
+             *************************************/
+            
+             if (gender === 'Z') {
+                if (height > 1.8) {
+               biography += statistika + " je osoba zenskog pola i nadprosečno visoka. \n";
+           } else if (height > 1.55 && height <= 1.8) {
+               biography += statistika + " je osoba zenskog pola i prosečno visoka. \n";
+           } else {
+               biography += statistika + " je osoba zenskog pola i niska. \n";
+           }
+            } else {
+                if (height > 1.9) {
+               biography += statistika + " je osoba muskog pola i nadprosečno visoka. \n";
+           } else if (height > 1.7 && height <= 1.9) {
+               biography += statistika + " je osoba muskog pola prosečno visoka. \n";
+           } else {
+               biography += statistika + " je osoba muskog pola i niska. \n";
+           }
+            }
+           //console.log("Biografija 3: \n" + biography);
+           document.getElementById('statistics').innerText = biography + '';
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,222 @@
+/* 0. GENERAL */
+
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: Helvetica, sans-serif, serif;
+    width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #3c3ca2 0%, #ff9966 100%);
+}
+
+header {
+    /*background-color: #f3b8b8;*/
+    color: darkblue;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+header p {
+    float: right;
+    text-align: right;
+    color: rgb(0,167,180);
+    padding: 21px 30px 0 0;
+}
+
+header img {
+    float: left;
+}
+
+nav {
+   /* background-color: silver;*/
+}
+
+nav ul {
+    padding-left: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    /*width: 120px;
+    padding: 10px 0;
+    text-align: center;*/
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px; 
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    color:#67aefe;
+}
+
+nav ul li a:hover {
+    background-color: #da8366;
+    color: #02196d; 
+}
+
+#main {
+    background-color: blue;
+}
+
+article {
+    /* background-color: red;*/
+    display: inline-block;
+    width: 70%;   
+    vertical-align: top;
+    padding: 30px;
+}
+
+aside {
+    border: 1.5px solid #67aefe;
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+    margin-top: 15px;
+    padding: 30px;
+}
+
+footer {
+   /* background-color: #f3b8b8;*/
+    color: darkblue;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+h1 {
+    /*color: red;*/
+    font-size: 30px;
+}
+
+h2 {
+    /*color: yellow;*/
+}
+
+p {
+    font-size: 12px;
+}
+
+/* mouse hover over every link */
+a:hover {
+    color:white;
+    background-color: black;
+}
+
+/* visited link */
+a:visited {
+    color: #da8366;
+}
+
+/* 1. INDEX */
+/*
+.important {
+    margin: 25px;
+    padding: 15px;
+    border: 1px solid red;
+    background-color: #67aefe;
+    width: 400px;
+}
+
+.different_font {
+    font-family: 'Sofia';
+}
+
+#define-html {
+    background-color: gold;
+    font-size: 17px;
+}
+
+.different_color {
+    color: blue;
+} 
+*/
+
+/* 2. COURSES */
+/*
+.sidebar {
+    background-color: #b7cff4;
+}
+
+ul.sidebar {
+    padding-left: 0;
+    width: 400px;
+}
+
+ul.sidebar li {
+    list-style: none;
+}
+
+ul.sidebar > li {
+    border-top: 2px solid blue;
+}
+
+ul.sidebar li ul {
+    padding-left: 0;
+}
+
+ul.sidebar li ul li {
+    background-color: #eee;
+}
+*/
+
+/* 3. STUDENTS */
+/*
+table.students, tr, th, td {
+    border: 2px solid blue;
+    border-collapse: collapse;
+}
+
+table.students {
+    width: 500px;
+}
+
+table.students thead tr th {
+    background-color: #9eb3d6;
+}
+
+table.students tbody tr td {
+    border-bottom: 3px solid #e5a9dd;
+}
+
+table.students tbody tr:last-child {
+    color: darkred;
+}
+
+table.students tbody tr:nth-child(odd) {
+    background-color: #9dff8e;
+}
+*/
+
+
+/* 4. BORDER-BOX */
+/*
+#div1, #div2 {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 30px;
+}
+
+#div1 {
+    box-sizing: content-box;
+    border: 5px solid cornflowerblue;
+}
+
+#div2 {
+    box-sizing: border-box;
+    border: 5px solid magenta;
+}
+*/
+
+/* 5. LAYOUT */
+
+

@@ -1,0 +1,25 @@
+.important {
+    margin: 25px;
+    padding: 15px;
+    border: 1px solid #67aefe;
+    /*background-color: #67aefe;*/
+    width: 400px;
+}
+
+.different_font {
+    font-family: 'Sofia';
+}
+
+#define-html {
+    /*background-color: gold;*/
+    font-size: 17px;
+}
+
+.different_color {
+    /*color: blue;*/
+} 
+
+aside#index-aside {
+    margin-top: 54.9px;
+}
+

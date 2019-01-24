@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Frontend</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../assets/css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="../assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+        <link href="../assets/css/box-model.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header> 
+            <img src="assets/images/logo.png" alt="Logo"/>
+            <p>Cubes QA 2018</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Naslovna</a></li>
+                <li><a href="courses.html">Kursevi</a></li>
+                <li><a href="students.html">Studenti</a></li>
+                <li><a href="01-basic.html">Box-model</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <article>
+            <h2>Uporedjivanje dva broja</h2>
+            <form>
+                <div>
+                    <label for="first">Prvi broj</label>
+                    <input type="text" name="firstNumber" id="first">
+                </div>
+                <div>
+                    <label for="second">Drugi broj</label>
+                    <input type="text" name="secondNumber" id="second">
+                </div>
+                <div>
+                    <button type="button"  id="btn" onclick="compare()">Uporedi </button>
+                </div>
+                <p id="messageBox"></p>
+            </form>
+            <!-- <form action="javascript:void(0);" method="POST" onsubmit="verification()"> 
+                a: <input type="text" id="number_a">
+                b: <input type="text" id="number_b">
+                <input type="submit" value="Uporedi">
+            </form> -->
+        </article>
+
+        <aside id="box-aside">
+            <h3>Ukratko</h3>
+            <p>
+                Na ovom času je objašnjeno kako se div-ovi i kako se oni mogu stilizovati<br>
+                Urađena su dva primera.
+            </p>
+        </aside>
+
+        <footer>
+            <p>&copy; Cubes 2018</p>
+        </footer>
+        <!-- <script src="../assets/js/basics.js" type="text/javascript"></script>-->
+        <!-- <script>
+           function verification() {
+               var a = document.getElementById("number_a").value;
+               var b = document.getElementById("number_b").value;
+
+               if (a > b) {
+                   alert("Broj a je veci od broja b");
+               } else if (a < b) {
+                   alert("Broj a je manji od broja b");
+               } else {
+                   alert("Brojevi a i b su jednaki");
+               }
+               a = "";
+               b = "";
+           }
+       </script> -->
+        <script>
+            function compare() {
+                let firstNum = Number(document.getElementById("first").value);
+                let secondNum = Number(document.getElementById("second").value);
+                let message = document.getElementById("messageBox");
+                if (firstNum == "" || secondNum == "") {
+                    message.innerHTML = "Molimo unestite vrednosti u polja";
+                } else {
+                    if (firstNum > secondNum) {
+                        message.innerHTML = "Prvi broj je veci";
+                    } else if (firstNum < secondNum) {
+                        message.innerHTML = "Drugi broj je veci";
+                    } else {
+                        message.innerHTML = "Brojevi su jednaki";
+                    }
+                }
+            }
+        </script>
+
+    </body>
+</html>
+
